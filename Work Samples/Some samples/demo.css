@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:gabriola;
+}
+
+body{
+    background-image: linear-gradient(rgba(37,37,37,0.7), rgba(37,37,37,0.7)), url("tech.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+   
+}
+
+
+#nav_bar{
+    position: fixed;
+    background-color: rgba(24, 24, 24, 1);
+    max-width:70vw;
+}
+
+#menu_items{
+    position: relative;
+    height:100vh;
+    top: 200px;
+}
+
+#menu_items li:hover{
+    background-color:#252525;
+}
+
+.menu{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:  #08fdd8;
+    text-align: center;
+    letter-spacing: 1px; 
+    padding: 10px 0; 
+    margin:0 0 20px 0;
+    transition:  0.7s;
+}
+
+#home{
+    background-image: url("home_hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#skills{
+    background-image: url("skills_hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#my_works{
+    background-image: url("works_hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#contact{
+    background-image: url("contact_hover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:72%;
+}
+
+
+#home:hover{
+    cursor: pointer;
+    background: none;
+    background-size: 100%;
+}
+
+#skills:hover{
+    cursor: pointer;
+    background: none;
+    background-size: 100%;
+}
+
+#my_works:hover{
+    cursor: pointer;
+    background: none;
+    background-size: 100%;
+}
+
+#contact:hover{
+    cursor: pointer;
+    background: none;
+    background-size: 100%;
+}
+
+.menu:after{
+    opacity: 0;
+    content:attr(data-text);
+}
+
+.menu:hover:after{
+    opacity: 1;
+}
+
+#home:active{
+    background-image: url("home.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#skills:active{
+    background-image: url("skills.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#my_works:active{
+    background-image: url("works.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+
+#contact:active{
+    background-image: url("contact.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:72%;
+}
+
+.menu:active:after{
+    opacity: 0;
+}
+
+#title{
+    position: fixed;
+    margin: auto;
+    left: 10%;
+    top:25%;
+}
+
+.title{
+    position: relative;
+    font-size: 4em;
+    color: #fff;
+
+}
+
+.title:after{
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #08fdd8;
+    filter: blur(15px);
+    opacity: .5;;
+}
+
+
+
