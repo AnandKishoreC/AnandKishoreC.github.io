@@ -17,7 +17,7 @@ body{
     height: 500px;
     margin: auto;
     transform-style: preserve-3d;
-    animation: rotateSphere 50000ms linear infinite;
+    animation: rotateSphere 5000ms linear infinite;
 }
 
 
